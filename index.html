@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkApp</title>
+    <link rel="stylesheet" href="./assets/styles/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg menu navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">SparkApp</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="banner"></div>
+
+        <button class="btn btn-primary botonChat" id="botonChat" onclick="cambiarCaja()">SparkBot Chat</button>
+        <div class="cajaChat" id="cajaChat">
+            <div class="p-4">
+                <h5>SparkBot</h5>
+                <p>Welcome, this is the SparkBot...</p>
+                <hr>
+                <p class="text-start">Hey, what's up?</p>
+                <p class="text-end text-primary fw-bold">not much...</p>
+
+                <div class="textoChat">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-9">
+                        <input type="text" class="form-control my-3" id="textoChat">
+                      </div>
+                      <div class="col-3 mt-2">
+                        <i class="bi bi-send-fill fs-3"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <section class="container-fluid">
+          <div class="row">
+            <div class="col-12 my-5">
+              <img src="./assets/img/tigre-sura.jpg" alt="foto" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-8">
+              <h3>TITULO</h3>
+              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perferendis debitis maxime ducimus aliquam neque eius esse. Fugiat, architecto eligendi. Obcaecati veniam excepturi delectus similique temporibus? Alias consequuntur quisquam obcaecati?</P>
+            </div>
+            <div class="col-4">
+              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem at nulla omnis autem quisquam. Maiores ratione numquam illum, rerum incidunt eaque doloribus natus possimus odit voluptas error? Saepe, impedit.</P>
+            </div>
+          </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./src/controllers/controlador.js"></script>
+</body>
+</html>
